@@ -37,3 +37,78 @@ a {
 a:hover {
     text-decoration: underline;
 }
+/* General Body and Background Styling */
+body {
+    background-color: #1B263B; /* Dark blue background */
+    color: #E0E0E0; /* Light text color for readability */
+    font-family: 'Open Sans', sans-serif;
+}
+header, footer {
+    background-color: #1B263B;
+    color: #E0E0E0;
+    text-align: center;
+    padding: 50px 0;
+}
+header h1, header h2 {
+    color: #E0E0E0;
+}
+.typing {
+    color: #66FCF1; /* Highlighted typing color */
+}
+
+/* Social Icon Styling */
+.social-icons a {
+    color: #66FCF1; /* Light teal for icons */
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #45A29E; /* Slightly darker teal on hover */
+}
+
+/* Portfolio Section Styling */
+.portfolio {
+    padding: 50px 0;
+}
+.portfolio-item {
+    padding: 15px;
+    transition: transform 0.3s;
+}
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+.card {
+    background-color: #243447; /* Darker card background */
+    border: 1px solid #66FCF1; /* Light teal border */
+    color: #E0E0E0;
+}
+.card-title {
+    color: #66FCF1;
+}
+
+/* Footer */
+footer p {
+    margin: 0;
+}
+
+/* Intro Card Styling */
+.intro-card {
+    margin: 30px 0;
+    background-color: #243447;
+    border: 1px solid #66FCF1;
+    color: #E0E0E0;
+    padding: 30px;
+}
+.intro-card h3 {
+    color: #66FCF1;
+}
+.intro-card p {
+    color: #E0E0E0;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer p {
+    margin: 0;
+}

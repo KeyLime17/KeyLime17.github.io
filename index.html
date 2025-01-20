@@ -13,62 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Icons and Typing CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
-    <style>
-        /* General Body and Background Styling */
-        body {
-            background-color: #1B263B; /* Dark blue background */
-            color: #E0E0E0; /* Light text color for readability */
-            font-family: 'Open Sans', sans-serif;
-        }
-        header, footer {
-            background-color: #1B263B;
-            color: #E0E0E0;
-            text-align: center;
-            padding: 50px 0;
-        }
-        header h1, header h2 {
-            color: #E0E0E0;
-        }
-        .typing {
-            color: #66FCF1; /* Highlighted typing color */
-        }
-
-        /* Social Icon Styling */
-        .social-icons a {
-            color: #66FCF1; /* Light teal for icons */
-            font-size: 1.5rem;
-            margin: 0 10px;
-            transition: color 0.3s;
-        }
-        .social-icons a:hover {
-            color: #45A29E; /* Slightly darker teal on hover */
-        }
-
-        /* Portfolio Section Styling */
-        .portfolio {
-            padding: 50px 0;
-        }
-        .portfolio-item {
-            padding: 15px;
-            transition: transform 0.3s;
-        }
-        .portfolio-item:hover {
-            transform: scale(1.05);
-        }
-        .card {
-            background-color: #243447; /* Darker card background */
-            border: 1px solid #66FCF1; /* Light teal border */
-            color: #E0E0E0;
-        }
-        .card-title {
-            color: #66FCF1;
-        }
-
-        /* Footer */
-        footer p {
-            margin: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -76,29 +21,36 @@
     <header>
         <h1>Makar Nestsiarenka</h1>
         <h2>I enjoy <span class="typing"></span></h2>
-        <div class="card-body">
-            <p>
-                Hi, I'm Makar Nestiarenka Developer and IT Enthusiast.
-                Welcome to my portfolio! I’m a software developer with a passion for solving problems and creating cool, user-friendly solutions.
-                Currently studying at Mohawk College, I’ve been diving into everything from back-end development with tools like Azure and MySQL to front-end technologies like React and JavaScript.
-            </p>
-            <p>
-                I’ve spent time in customer service roles where I’ve learned a lot about how important it is to understand people’s needs and make their experiences better.
-                Whether it’s helping students and faculty troubleshoot IT issues or making sure customers at a store get the best experience, I always aim to deliver top-notch service.
-            </p>
-            <p>
-                Below would be some of my projects and demos. Feel free to check them out and let me know what you think!
-                Thank you for checking me out, Im always eager to collaborate and build something meaninful. You can get in touch with me through the social media links below!
-            </p>
-        </div>
+
+        <!-- Intro Card -->
+        <div class="container">
+            <div class="intro-card container">
+                <h3>Welcome to My Portfolio</h3>
+                
+                <section><p>
+                    Hi, I'm Makar Nestiarenka, a developer and IT enthusiast. 
+                    Welcome to my portfolio! I’m a software developer with a passion for solving problems and creating cool, 
+                    user-friendly solutions. Currently studying at Mohawk College, 
+                    I’ve been diving into everything from back-end development with tools like Azure and MySQL to front-end technologies like React and JavaScript.
+                </p></section>
+                
+                <section><p>
+                    I’ve spent time in customer service roles where I’ve learned a lot about how important 
+                    it is to understand people’s needs and make their experiences better. 
+                    Whether it’s helping students and faculty troubleshoot IT issues or making sure customers at a store get the best experience, 
+                    I always aim to deliver top-notch service.
+                </p></section>
+                <section><p>
+                    Below are some of my projects and demos. 
+                    Feel free to check them out and let me know what you think! 
+                    Thank you for checking me out, I'm always eager to collaborate and build something meaningful. 
+                    You can get in touch with me through the social media links below!
+                </p></section>
+            </div>
+        </section>
+
         
-        <!-- Social Media Links -->
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/makar-nestsiarenka-58554b156/" target="_blank" class="mdi mdi-linkedin"></a>
-            <a href="https://github.com/KeyLime17?tab=repositories" target="_blank" class="mdi mdi-github"></a>
-            <a href="mailto:nesterenka.makar@gmail.com" class="mdi mdi-email"></a>
-            <a href="assets/resume.pdf" target="_blank" class="mdi mdi-file-pdf-box"></a>
-        </div>
+        
     </header>
 
     <!-- Portfolio Section -->
@@ -121,7 +73,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title" style="color: #66FCF1;">Course works</h5>
-                                <p class="card-text">A repository holding all my latest works within my program, Old ones being within the 'Old Assignments' directory, I will continously add onto it as more assignments come in!</p>
+                                <p class="card-text">A repository holding all my latest works within my program!</p>
                             </div>
                         </div>
                     </a>
@@ -141,14 +93,20 @@
 
     <!-- Footer -->
     <footer>
-        <p>Created for Assignment #3</p>
+        <!-- Social Media Links -->
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/makar-nestsiarenka-58554b156/" target="_blank" class="mdi mdi-linkedin"></a>
+            <a href="https://github.com/KeyLime17?tab=repositories" target="_blank" class="mdi mdi-github"></a>
+            <a href="mailto:nesterenka.makar@gmail.com" class="mdi mdi-email"></a>
+            <a href="assets/resume.pdf" target="_blank" class="mdi mdi-file-pdf-box"></a>
+        </div>
     </footer>
 
     <!-- Typed.js Script -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script>
         var typed = new Typed('.typing', {
-            strings: ["Java Programming", "writing Javascript", "building with Azure"],
+            strings: ["Java Programming", "writing Javascript", "working with people", "building with Azure", "working with React", "learning new stuff", "solving problems", "creating cool things"],
             typeSpeed: 60,
             backSpeed: 40,
             loop: true
